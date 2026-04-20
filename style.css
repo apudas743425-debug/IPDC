@@ -107,6 +107,20 @@ figure {
   background-color: var(--primary-dark-pink);
 }
 
+.hamburger{
+      position: absolute;
+    display: none;
+    cursor: pointer;
+    width: 30px;
+    height: 25px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+} 
+.hamburger i{
+  color: var(--main-color-pink);
+}
+
 .hero {
   padding: 15px 0;
 }
@@ -468,6 +482,134 @@ h2,
   font-size: 17px;
   font-weight: 600;
   color: var(--primary-black);
+}
+
+/* media quality */
+
+/* =========================
+   MEDIA QUERY
+========================= */
+
+/* Tablet */
+@media (max-width: 992px) {
+
+  .col40,
+  .col60 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .col25,
+  .col20 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .nav-links a {
+    padding: 15px;
+    font-size: 11px;
+  }
+
+  .hero-left h1 {
+    font-size: 42px;
+    margin: 0 auto;
+  }
+
+  .hero-left p {
+    margin: 15px auto;
+  }
+
+  .loan-logo {
+    display: none;
+  }
+
+  .exp-content-card {
+    text-align: center;
+  }
+
+  .exp-content-card p {
+    margin: 0 auto;
+  }
+
+  .contact {
+    justify-content: flex-start;
+    margin-top: 20px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+
+  .nav-links {
+    display: none;
+  }
+
+  .search-icon {
+    display: none;
+  }
+
+  .nav-btn {
+    margin-left: auto;
+  }
+
+  .col40,
+  .col60,
+  .col25,
+  .col20 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .hero-left h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .hero-left p {
+    text-align: center;
+  }
+
+  .cmn-btn {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .btn1,
+  .btn2 {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .hero-icons {
+    text-align: center;
+  }
+
+  .exp-content-card {
+    text-align: center;
+  }
+
+  .exp-content-card p {
+    margin: 0 auto;
+  }
+
+  .footer {
+    text-align: center;
+  }
+
+  .contact {
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .loan-logo {
+    display: none;
+  }
+
+  .ipdc-theme {
+    margin-bottom: 30px;
+  }
 }
 
 
